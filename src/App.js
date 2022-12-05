@@ -25,7 +25,7 @@ function App() {
         <h1>This is a list of things that everyone is thankful for</h1>
       </div>
       <div className="input-container">
-        <Input onChange={getInputValue} placeholder="I'm thankful for..." />
+        <Input value={inputValue} onChange={getInputValue} placeholder="I'm thankful for..." />
       </div>
       <div className="button-container">
         <Button type="submit" onClick={addToList} buttonText="Add to list" />
