@@ -21,8 +21,8 @@ function App() {
       <h1>This is a list of things that everyone is thankful for</h1>
       <Input onChange={getInputValue}/>
       <Button onClick={addToList} buttonText="Add to list"/>
-      {inputValue.map((list)=>{
-        return <List listText={list[0]}/>
+      {listState.map((list)=>{
+        return <List listText={list}/>
       })}
       
     </div>
