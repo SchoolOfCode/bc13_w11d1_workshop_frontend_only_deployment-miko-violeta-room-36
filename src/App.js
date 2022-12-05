@@ -15,11 +15,20 @@ function App() {
     setListState([...listState, inputValue]);
   }
 
+  // function emptyInputBox(e) {
+  //   e.preventDefault();
+  //   setInputValue('');
+  // }
+
   return [
     <div className="app-container">
       <h1>This is a list of things that everyone is thankful for</h1>
       <Input onChange={getInputValue} />
-      <Button onClick={addToList} buttonText="Add to list" />
+      <Button
+        onClick={addToList}
+        // onSubmit={emptyInputBox}
+        buttonText="Add to list"
+      />
       {listState.map((list) => {
         return <List listText={list} />;
       })}
