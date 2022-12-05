@@ -1,8 +1,8 @@
 import React from "react";
 
-function List(){
+function List(props){
     return <div className="list-container">
-        <li> </li>
+        <li>{props.listText}</li>
 
     </div>
 }
