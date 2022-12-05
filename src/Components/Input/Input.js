@@ -1,7 +1,7 @@
 import React from "react";
 
 function Input(props){
-    return <div className="input-container">
+    return <div className="input-div">
         <input onChange={props.onChange} placeholder={props.placeholder} type="text"/>
 
     </div>
