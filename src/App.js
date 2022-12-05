@@ -32,9 +32,11 @@ function App() {
       {listState.map((list) => {
         return <List listText={list} />;
       })}
+      <div className='footer-container'>
       <p>This app was created by Violeta Cique Fernández & Mikolaj Zagrodzki</p>
       <img src="./LOGO.png" />
-    </div>,
+      </div>
+    </div>
   ];
 }
 
