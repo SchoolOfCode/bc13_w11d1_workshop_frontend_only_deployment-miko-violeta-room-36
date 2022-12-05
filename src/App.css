@@ -37,6 +37,12 @@
 .input-container input:placeholder{
   color: rgb(25, 25, 105);
 }
+.input-container textarea{
+  padding: 5px;
+  resize: horizontal;
+}
+
+
 .button-container {
   display: flex;
   flex-direction: column;
