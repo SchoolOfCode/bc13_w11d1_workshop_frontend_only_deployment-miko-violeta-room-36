@@ -5,6 +5,8 @@
     justify-content: center;
     text-align: center;
     margin: 10%;
+    /* width: 100vw; */
+    
     
 }
 .input-container{
@@ -16,4 +18,18 @@
 }
 .list-container{
     padding: 3px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 0vh;
+    left: 29vw;
+    
+}
+.footer-container img{
+    height: 100px;
+    width: 300px;
 }

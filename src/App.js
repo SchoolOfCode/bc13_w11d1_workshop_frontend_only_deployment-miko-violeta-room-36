@@ -16,7 +16,7 @@ function App() {
     setListState([...listState, inputValue])
   }
 
-  return (
+  return [
     <div className="app-container">
       <h1>This is a list of things that everyone is thankful for</h1>
       <Input onChange={getInputValue}/>
@@ -24,9 +24,12 @@ function App() {
       {listState.map((list)=>{
         return <List listText={list}/>
       })}
-      
+    </div>,
+    <div className='footer-container'>
+      <p>This app was created by Violeta Cique Fernández & Mikolaj Zagrodzki</p>
+      <img src='./LOGO.png'/>
     </div>
-  );
+  ];
 }
 
 export default App;
