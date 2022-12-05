@@ -1,23 +1,16 @@
 
 import './App.css';
+import Button from './Components/Button/Button';
+import Input from './Components/Input/Input';
+import List from './Components/List/List';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <h1>This is a list of things that everyone is thankful for</h1>
+      <Input/>
+      <Button/>
+      <List/>
     </div>
   );
 }
